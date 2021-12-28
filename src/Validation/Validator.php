@@ -1,12 +1,7 @@
 <?php
-
 namespace MasoudMVC\Validation;
 
-use MasoudMVC\Validation\Rules\AlphaNumericalRule;
-use MasoudMVC\Validation\Rules\BetweenRule;
 use MasoudMVC\Validation\Rules\Contract\Rule;
-use MasoudMVC\Validation\Rules\MaxRule;
-use MasoudMVC\Validation\Rules\RequiredRule;
 
 class Validator
 {
@@ -14,12 +9,6 @@ class Validator
     protected array $rules = [];
     protected array $aliases = [];
     protected ErrorBag $errorBag;
-    protected array $ruleMap = [
-        'required' => RequiredRule::class,
-        'alnum' => AlphaNumericalRule::class,
-        'max' => MaxRule::class,
-        'between' => BetweenRule::class
-    ];
 
     public function make($data)
     {
@@ -31,7 +20,7 @@ class Validator
     protected function validate()
     {
         foreach ($this->rules as $field => $rules) {
-            foreach ($this->resolveRules($rules) as $rule) {
+            foreach (RulesResolver::make($rules) as $rule) {
                 $this->applyRule($field, $rule);
             }
         }
@@ -42,26 +31,6 @@ class Validator
         if (!$rule->apply($field, $this->getFieldValue($field), $this->data)) {
             $this->errorBag->add($field, Message::generate($rule, $this->alias($field)));
         }
-    }
-
-    protected function resolveRules($rules)
-    {
-        return array_map(function ($rule) {
-            if (is_string($rule)) {
-                return $this->getRuleFromString($rule);
-            }
-
-            return $rule;
-        }, $rules);
-    }
-
-    protected function getRuleFromString(string $rule)
-    {
-        $exploded = explode(':', $rule);
-        $rule = $exploded[0];
-        $options = explode(',', end($exploded));
-
-        return new $this->ruleMap[$rule](...$options);
     }
 
     public function getFieldValue($field)

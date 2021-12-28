@@ -1,5 +1,4 @@
 <?php
-
 namespace MasoudMVC\Validation\Rules;
 
 use MasoudMVC\Validation\Rules\Contract\Rule;
@@ -25,6 +24,6 @@ class BetweenRule implements Rule
 
     public function __toString()
     {
-        return "%s must be between {$this->min} and {$this->max}";
+        return "%s must be between {$this->min} and {$this->max} characters";
     }
 }
