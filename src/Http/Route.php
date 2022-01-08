@@ -1,12 +1,10 @@
 <?php
-
 namespace MasoudMVC\Http;
 
 use MasoudMVC\View\View;
 
-class Route 
+class Route
 {
-
     public function __construct(protected Request $request, protected Response $response)
     {
     }
@@ -30,10 +28,9 @@ class Route
         $action = self::$routes[$method][$path] ?? false;
 
         if (!array_key_exists($path, self::$routes[$method])) {
+            $this->response->getStatusCode(404);
             View::makeError('404');
         }
-
-        // 404 handling
 
         if (is_callable($action)) {
             call_user_func_array($action, []);

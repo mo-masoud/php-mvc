@@ -7,6 +7,7 @@ use MasoudMVC\Validation\Rules\RequiredRule;
 use MasoudMVC\Validation\Rules\AlphaNumericalRule;
 use MasoudMVC\Validation\Rules\ConfirmedRule;
 use MasoudMVC\Validation\Rules\EmailRule;
+use MasoudMVC\Validation\Rules\UniqueRule;
 
 trait RulesMapper
 {
@@ -16,7 +17,8 @@ trait RulesMapper
         'max' => MaxRule::class,
         'between' => BetweenRule::class,
         'email' => EmailRule::class,
-        'confirmed' => ConfirmedRule::class
+        'confirmed' => ConfirmedRule::class,
+        'unique' => UniqueRule::class,
     ];
 
     public static function resolve(string $rule, $options)

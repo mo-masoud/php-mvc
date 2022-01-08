@@ -1,10 +1,13 @@
 <?php
 namespace MasoudMVC;
 
+use MasoudMVC\Database\DB;
+use MasoudMVC\Http\Route;
 use MasoudMVC\Http\Request;
 use MasoudMVC\Http\Response;
-use MasoudMVC\Http\Route;
 use MasoudMVC\Support\Config;
+use MasoudMVC\Database\Managers\MySQLManager;
+use MasoudMVC\Support\Session;
 
 class Application
 {
@@ -12,6 +15,8 @@ class Application
     protected Request $request;
     protected Response $response;
     protected Config $config;
+    protected DB $db;
+    protected Session $session;
 
     public function __construct()
     {
@@ -19,6 +24,16 @@ class Application
         $this->response = new Response();
         $this->route = new Route($this->request, $this->response);
         $this->config = new Config($this->loadConfigurations());
+        $this->db = new DB($this->getDatabaseDriver());
+        $this->session = new Session;
+    }
+
+    protected function getDatabaseDriver()
+    {
+        return match ($this->config->get('database.driver')) {
+            'mysql' => new MySQLManager,
+            default => new MySQLManager,
+        };
     }
 
     private function loadConfigurations()
@@ -36,6 +51,7 @@ class Application
 
     public function run()
     {
+        $this->db->init();
         $this->route->resolve();
     }
 
