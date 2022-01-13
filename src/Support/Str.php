@@ -111,6 +111,11 @@ class Str
         return mb_strtolower($string);
     }
 
+    public static function upper($string)
+    {
+        return mb_strtoupper($string);
+    }
+
     public static function singular($string)
     {
         // save some time in the case that singular and plural are the same

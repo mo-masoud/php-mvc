@@ -1,27 +1,37 @@
 <?php
 namespace MasoudMVC\Database\Managers;
 
-use App\Models\Model;
+use PDO;
+use PDOStatement;
+use MasoudMVC\Database\Model;
 use MasoudMVC\Database\Grammers\MySQLGrammar;
 use MasoudMVC\Database\Managers\Contracts\DatabaseManager;
-use PDO;
 
 class MySQLManager implements DatabaseManager
 {
-    protected static $instance;
+    protected PDO|null $instance = null;
 
     public function connect(): PDO
     {
-        if (!self::$instance) {
-            self::$instance = new PDO(config('database.driver') . ':host=' . config('database.host') . ';dbname=' . config('database.db_name'), config('database.username'), config('database.password'));
+        if (!$this->instance) {
+            $this->instance = new PDO(config('database.driver') . ':host=' . config('database.host') . ';dbname=' . config('database.db_name'), config('database.username'), config('database.password'));
         }
 
-        return self::$instance;
+        return $this->instance;
+    }
+
+    private function bindValues(PDOStatement &$stmt, $filters = []): PDOStatement
+    {
+        for ($i = 1; $i <= count($filters) ; $i++) {
+            $stmt->bindValue($i, $filters[$i - 1]['value']);
+        }
+
+        return $stmt;
     }
 
     public function query(string $query, array $values = [])
     {
-        $stmt = self::$instance->prepare($query);
+        $stmt = $this->instance->prepare($query);
         for ($i = 1; $i <= count($values); $i++) {
             $stmt->bindValue($i, $values[$i - 1]);
         }
@@ -35,22 +45,23 @@ class MySQLManager implements DatabaseManager
     {
         $query = MySQLGrammar::buildInsertQuery(array_keys($data));
 
-        $stmt = self::$instance->prepare($query);
+        $stmt = $this->instance->prepare($query);
 
         for ($i = 1; $i <= count($values = array_values($data)); $i++) {
             $stmt->bindValue($i, $values[$i - 1]);
         }
 
-        return $stmt->execute();
+        $stmt->execute();
+
+        return $this->instance->lastInsertId();
     }
 
-    public function read(string $columns = '*', $filter = null)
+    public function read(string | array $columns = '*', $filters = [], array $orderBy, int | null $limit)
     {
-        $query = MySQLGrammar::buildSelectQuery($columns, $filter);
-        $stmt = self::$instance->prepare($query);
-        if ($filter) {
-            $stmt->bindValue(1, $filter[2]);
-        }
+        $query = MySQLGrammar::buildSelectQuery($columns, $filters, $orderBy, $limit);
+        $stmt = $this->instance->prepare($query);
+
+        $this->bindValues($stmt, $filters);
 
         $stmt->execute();
 
@@ -61,7 +72,7 @@ class MySQLManager implements DatabaseManager
     {
         $query = MySQLGrammar::buildUpdateQuery(array_keys($attributes));
 
-        $stmt = self::$instance->prepare($query);
+        $stmt = $this->instance->prepare($query);
 
         for ($i = 1; $i <= count($values = array_values($attributes)); $i++) {
             $stmt->bindValue($i, $values[$i - 1]);
@@ -74,11 +85,15 @@ class MySQLManager implements DatabaseManager
         return $stmt->execute();
     }
 
-    public function delete(int $id)
+    public function delete(int $id = null, $filters = [])
     {
-        $query = MySQLGrammar::buildDeleteQuery();
-        $stmt = self::$instance->prepare($query);
-        $stmt->bindValue(1, $id);
+        $query = MySQLGrammar::buildDeleteQuery($filters);
+        $stmt = $this->instance->prepare($query);
+        if ($id) {
+            $stmt->bindValue(1, $id);
+        } else {
+            $this->bindValues($stmt, $filters);
+        }
 
         return $stmt->execute();
     }

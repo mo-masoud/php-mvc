@@ -25,9 +25,9 @@ class DB
         return $this->manager->create($data);
     }
 
-    protected function delete($id)
+    protected function delete(int $id = null, $filters = [])
     {
-        return $this->manager->delete($id);
+        return $this->manager->delete($id, $filters);
     }
 
     protected function update($id, array $attributes)
@@ -35,9 +35,9 @@ class DB
         return $this->manager->update($id, $attributes);
     }
 
-    protected function read(string $columns = '*', $filter = null)
+    protected function read(string | array $columns = '*', $filters = [], array $orderBy, int | null $limit)
     {
-        return $this->manager->read($columns, $filter);
+        return $this->manager->read($columns, $filters, $orderBy, $limit);
     }
 
     public function __call($name, $arguments)
