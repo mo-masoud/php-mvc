@@ -1,25 +1,30 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\User;
+use App\Models\Bill;
+use App\Models\Story;
 
 class UserController
 {
-    public function getAllUsers()
+    public function profile()
     {
-        // all records in database
-        // var_dump(User::all());
+        if (!isLogin()) {
+            return response()->redirect('/');
+        }
 
-        // all records with condition and select columns (default *)
-        // var_dump(User::get(['username', 'LIKE', '%md%'], 'id, name'));
+        $stories = Story::where('user_id', '=', auth()->id)->get();
+        $storiesViews = 0;
+        array_map(function ($story) use (&$storiesViews) {
+            $storiesViews += $story->views;
+        }, $stories);
+        $storiesCount = count($stories);
 
-        // update
-        // User::update(6, [
-        //     'username' => 'mod',
-        //     'email' => 'mod@mod.com',
-        // ]);
+        $bills = Bill::where('user_id', '=', auth()->id)->get();
+        $purchases = [];
+        array_map(function ($bill) use (&$purchases) {
+            $purchases[] = Story::where('id', '=', $bill->story_id)->find();
+        }, $bills);
 
-        // delete
-        User::delete(6);
+        return view('profile', compact('storiesCount', 'storiesViews', 'stories', 'purchases'));
     }
 }

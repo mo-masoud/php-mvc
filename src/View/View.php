@@ -1,15 +1,17 @@
 <?php
-
 namespace MasoudMVC\View;
 
-class View 
+class View
 {
-    public static function make($view, $params = [])
+    public static function make($view, $params = [], $includeMain = true)
     {
-        $baseContent = self::getBaseContent();
-        $viewContent = self::getViewContent($view, params: $params);
-
-        echo str_replace('{{content}}', $viewContent, $baseContent);
+        if ($includeMain) {
+            $baseContent = self::getBaseContent();
+            $viewContent = self::getViewContent($view, params: $params);
+            echo str_replace('{{content}}', $viewContent, $baseContent);
+        } else {
+            echo self::getViewContent($view, params: $params);
+        }
     }
 
     protected static function getBaseContent()

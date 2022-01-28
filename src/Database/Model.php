@@ -73,9 +73,7 @@ abstract class Model
     {
         self::$instance = static::class;
 
-        $id = app()->db->create($attributes);
-        $attributes['id'] = $id;
-        return new self::$instance($attributes);
+        return app()->db->create($attributes);
     }
 
     public static function all()

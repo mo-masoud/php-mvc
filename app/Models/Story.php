@@ -3,6 +3,6 @@ namespace App\Models;
 
 use MasoudMVC\Database\Model;
 
-class User extends Model
+class Story extends Model
 {
 }

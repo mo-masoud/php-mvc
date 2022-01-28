@@ -14,4 +14,11 @@ class Response
 
         return $this;
     }
+
+    public function redirect(string $url)
+    {
+        header('Location:' . $url);
+
+        return $this;
+    }
 }

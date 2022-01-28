@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use MasoudMVC\Application;
 use MasoudMVC\Http\Request;
 use MasoudMVC\Http\Response;
@@ -125,8 +126,26 @@ if (!function_exists('config')) {
 }
 
 if (!function_exists('view')) {
-    function view($view, $params = [])
+    function view($view, $params = [], $includeMain = true)
     {
-        View::make($view, $params);
+        View::make($view, $params, $includeMain);
+    }
+}
+
+if (!function_exists('auth')) {
+    function auth()
+    {
+        if (isLogin()) {
+            return User::find(app()->session->get('auth_user'));
+        }
+
+        return null;
+    }
+}
+
+if (!function_exists('isLogin')) {
+    function isLogin() : bool
+    {
+        return (app()->session->has('auth_user'));
     }
 }
