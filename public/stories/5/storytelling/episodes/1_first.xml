@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><episode>    <scene>        <ch1>stories/5/storytelling/characters/Grim Rookie.png</ch1>        <ch2/>        <ch3>stories/5/storytelling/characters/police commisioner.png</ch3>        <background>stories/5/storytelling/settings/In - Police 1.jpg</background>        <backgroundEffect/>        <item/>        <bgm/>        <soundEffect/>        <soundEffectConstant/>        <voice/>        <speaker>masoud</speaker>        <dialogue>hello</dialogue>    </scene>
+        <scene>
+            <ch1/>
+            <ch2>stories/5/storytelling/characters/police commisioner.png</ch2>
+            <ch3/>
+            <background>stories/5/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm/>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>bakr</speaker>
+            <dialogue>mesa</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/5/storytelling/characters/police commisioner.png</ch2>
+            <ch3/>
+            <background>stories/5/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm/>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker/>
+            <dialogue/>
+        </scene>
+    </episode>

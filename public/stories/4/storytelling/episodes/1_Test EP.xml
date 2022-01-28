@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?><episode>
+        <scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Hello is this marlina?</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Marlina</speaker>
+            <dialogue>who is this?</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>This is Shaun.</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Marlina</speaker>
+            <dialogue>How did you get my number?</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Marlina</speaker>
+            <dialogue>I thought i told you i don't want to see you or hear from you after divorce.</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Marlina don't forget that we have a daughter together.</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>and i have the right to see her!</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Marlina</speaker>
+            <dialogue>You are insane Shaun!</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/items/phone.png</ch3>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Marlina</speaker>
+            <dialogue>I am hanging up and don't call me again!</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/0/storytelling/characters/Shaun.png</ch2>
+            <ch3/>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>...</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/0/storytelling/characters/Shaun.png</ch2>
+            <ch3/>
+            <background>stories/0/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/[Ambient] Allowed to be Happy.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>The worst decision of my life was this woman.</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/0/storytelling/characters/Shaun.png</ch2>
+            <ch3/>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>so ... work</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/0/storytelling/characters/Shaun.png</ch2>
+            <ch3/>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Where is that Grim?</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>Hey Wilson</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>You are late you get the nickname Rookie</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>...</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>Everyone in the station knows better to not get involved with you shaun</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Oh why is that?</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>...</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>oh never mind ...</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>Lets go see the commisioner it seems i got stuck with you.</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Yeah</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>by the way Rookie</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>Don't call me rookie</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Anyway</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>I was the one who recommended you</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>Bye!</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2/>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>What the!</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3/>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>Come back here!</dialogue>
+        </scene><scene>
+            <ch1/>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3/>
+            <background>stories/0/storytelling/settings/In - Police 1.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>Stop laughing Shaun!</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3>stories/0/storytelling/characters/police commisioner.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 2.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Demone</speaker>
+            <dialogue>Why you two are late?!</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3>stories/0/storytelling/characters/police commisioner.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 2.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Shaun</speaker>
+            <dialogue>We were slacking off on duty sir!</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3>stories/0/storytelling/characters/police commisioner.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 2.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Grim</speaker>
+            <dialogue>... huh?</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3>stories/0/storytelling/characters/police commisioner.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 2.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Demone</speaker>
+            <dialogue>Too honest shaun ....</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3>stories/0/storytelling/characters/police commisioner.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 2.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Demone</speaker>
+            <dialogue>I am your commanding officer ...</dialogue>
+        </scene><scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/Grim Rookie.png</ch2>
+            <ch3>stories/0/storytelling/characters/police commisioner.png</ch3>
+            <background>stories/0/storytelling/settings/In - Police 2.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>Demone</speaker>
+            <dialogue>Anyway back to business we got a murder on our hands here..</dialogue>
+        </scene>
+        <scene>
+            <ch1>stories/0/storytelling/characters/Shaun.png</ch1>
+            <ch2>stories/0/storytelling/characters/police commisioner.png</ch2>
+            <ch3>stories/0/storytelling/characters/Grim Rookie.png</ch3>
+            <background>stories/0/storytelling/settings/romantic resturant.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm>stories/0/storytelling/bgm/Late Night Paris Jazz.mp3</bgm>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>masoud</speaker>
+            <dialogue>Hello World</dialogue>
+        </scene>
+    
+        </episode>
