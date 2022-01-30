@@ -25,6 +25,8 @@ class UserController
             $purchases[] = Story::where('id', '=', $bill->story_id)->find();
         }, $bills);
 
-        return view('profile', compact('storiesCount', 'storiesViews', 'stories', 'purchases'));
+        $topStories = Story::get(orderBy: ['views', 'ASC'], limit: 3);
+
+        return view('profile', compact('storiesCount', 'storiesViews', 'stories', 'purchases', 'topStories'));
     }
 }

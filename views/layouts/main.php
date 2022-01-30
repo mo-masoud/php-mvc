@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body class="bg-color7">
 
     <?php include base_path() . 'views/partials/header.php'; ?>
 

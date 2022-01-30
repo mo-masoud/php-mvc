@@ -31,4 +31,4 @@ Route::post('/get-episodes', [EngineController::class, 'getEpisodes']);
 Route::post('/storyOperate', [EngineController::class, 'storyOperate']);
 Route::get('/uploadAsset', fn () => view('uploadAssets', includeMain: false));
 Route::post('/uploadAsset', fn () => view('uploadAssets', includeMain: false));
-Route::get('/review', fn () => view('review', includeMain: false));
+Route::get('/review', [EngineController::class, 'review']);

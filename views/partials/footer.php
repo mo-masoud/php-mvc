@@ -16,7 +16,8 @@
     <div class="container-fluid bg-color4 text-color2">
         <div class="container">
             <div class="row py-3">
-                <div class="col-md-12 my-auto text-center font-1">© 2021 Wattpad | Bring your story into life.</div>
+                <div class="col-md-12 my-auto text-center font-1">© <?= date('Y') ?> ArtZ | Bring your story into life.
+                </div>
             </div>
 
         </div>
@@ -191,7 +192,7 @@
                         <label for="createStory-cat">Category</label>
                         <select value="<?= old('category_id') ?>" name="category_id" class="form-control" required
                             id="createStory-cat">
-                            <?php foreach (App\Models\Category::get() as $category): ?>
+                            <?php foreach (App\Models\Category::where('id', '!=', 1)->get() as $category): ?>
                             <option value="<?= $category->id ?>"><?= $category->name ?></option>
                             <?php endforeach; ?>
                         </select>
@@ -216,7 +217,7 @@
                     </div>
                     <div class="form-group">
                         <label for="createStory-price">Price ($)</label>
-                        <input type="number" value="<?= old('price') ?>" name="price" class="form-control" required
+                        <input type="number" value="<?= old('price') ?>" name="price" class="form-control"
                             id="createStory-price" aria-describedby="emailHelp" value="0" min="0" max="20" step="1">
                         <?php if (app()->session->hasFlash('errors')): ?>
                         <p class="alert alert-danger">

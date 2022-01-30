@@ -1,0 +1,18 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<episode>
+    <scene>
+        <ch1></ch1>
+        <ch2></ch2>
+        <ch3></ch3>
+        <background></background>
+        <backgroundEffect></backgroundEffect>
+        <item></item>
+        <bgm></bgm>
+        <soundEffect></soundEffect>
+        <soundEffectConstant></soundEffectConstant>
+        <voice></voice>
+        <speaker></speaker>
+        <dialogue></dialogue>
+    </scene>
+</episode>

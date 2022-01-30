@@ -7,16 +7,17 @@
                         class="animate__animated animate__fadeInDown">
                 </div>
                 <div class="col-md-6 my-auto">
-                    <h2 class="text-color1 animate__animated animate__slideInUp">Hi, we 're Wattpad</h2>
+                    <h2 class="text-color1 animate__animated animate__slideInUp">Hi, we 're ArtZ</h2>
                     <h4 class="animate__animated animate__slideInUp">The Best visual audio stories platform</h4>
                     <p class="text-color5 animate__animated animate__slideInUp">
-                        Wattpad connects a global community of 90 million readers and writers through the power of
+                        ArtZ connects a global community of 90 million readers and writers through the power of
                         story.
                     </p>
-                    <button class="btn btn-lg btn-color1 mb-1 animate__animated animate__slideInUp">Start
-                        Watching</button>
-                    <button class="btn btn-lg btn-color1 mb-1 animate__animated animate__slideInUp">Start Visual
-                        Writing</button>
+                    <a href="/search" class="btn btn-lg btn-color1 mb-1 animate__animated animate__slideInUp">Start
+                        Watching</a>
+                    <a href="/profile" <?= !isLogin() ? 'data-toggle="modal" data-target="#modal-login"' : ''?>
+                        class="btn btn-lg btn-color1 mb-1 animate__animated animate__slideInUp">Start Visual
+                        Writing</a>
                 </div>
             </div>
         </div>
@@ -35,14 +36,14 @@
                     <img src="images/poster1.png" width="100%" alt="" class="animateJS animateImg">
                 </div>
                 <div class="col-md-7 text-center text-md-left">
-                    <div class="mb-4"><img src="images/poster1logo.svg" width="200px"></div>
+                    <div class="mb-4"><img src="images/poster1logo.png" width="200px"></div>
                     <h4>Your original story could be the next big hit</h4>
                     <p class="text-color5">
-                        Wattpad Studios discovers untapped, unsigned,
-                        and talented writers on Wattpad and connects them to global multi-media entertainment
+                        ArtZ Studios discovers untapped, unsigned,
+                        and talented writers on ArtZ and connects them to global multi-media entertainment
                         companies.
                     </p>
-                    <p>Wattpad Studios works with partners such as:</p>
+                    <p>ArtZ Studios works with partners such as:</p>
                     <div>
                         <img class="mr-5" src="images/studio1.svg" height="5%">
                         <img class="mr-5" src="images/studio2.svg" width="10%">
@@ -57,14 +58,14 @@
                     <img src="images/poster2.png" width="100%" alt="" class="animateJS animateImg">
                 </div>
                 <div class="col-md-7 text-center text-md-right">
-                    <div class="mb-4"><img src="images/poster2logo.svg" width="200px"></div>
+                    <div class="mb-4"><img src="images/poster2logo.png" width="200px"></div>
                     <h4>Your original story could be the next big hit</h4>
                     <p class="text-color5">
-                        Wattpad Studios discovers untapped, unsigned,
-                        and talented writers on Wattpad and connects them to global multi-media entertainment
+                        ArtZ Studios discovers untapped, unsigned,
+                        and talented writers on ArtZ and connects them to global multi-media entertainment
                         companies.
                     </p>
-                    <p>Wattpad Studios works with partners such as:</p>
+                    <p>ArtZ Studios works with partners such as:</p>
                     <div>
                         <img class="mr-5" src="images/studio1.svg" height="5%">
                         <img class="mr-5" src="images/studio2.svg" width="10%">
@@ -79,9 +80,9 @@
         <div class="container py-3">
             <div class="row">
                 <div class="col text-center mb-3">
-                    <h4 class="mb-5">How Wattpad works</h4>
+                    <h4 class="mb-5">How ArtZ works</h4>
                     <p class="mb-5">Get your story discovered through the power of community and technology on
-                        Wattpad.</p>
+                        ArtZ.</p>
                 </div>
             </div>
             <div class="row">
@@ -147,10 +148,13 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col my-auto text-center">
-                    <h2>Take Wattpad With You</h2>
+                    <h2>Take ArtZ With You</h2>
                     <p>The Best visual audio stories platform</p>
-                    <button class="btn btn-lg btn-color1 mb-1">Start Watching</button>
-                    <button class="btn btn-lg btn-color1 mb-1">Start Visual Writing</button>
+                    <a href="/search" class="btn btn-lg btn-color1 mb-1 animate__animated animate__slideInUp">Start
+                        Watching</a>
+                    <a href="/profile" <?= !isLogin() ? 'data-toggle="modal" data-target="#modal-login"' : ''?>
+                        class="btn btn-lg btn-color1 mb-1 animate__animated animate__slideInUp">Start Visual
+                        Writing</a>
                     <div class="mt-5">
                         <img src="images/footer-devices.png" width="100%">
                     </div>

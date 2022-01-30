@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><episode>    <scene>        <ch1>stories/7/storytelling/characters/Shaun.png</ch1>        <ch2/>        <ch3>stories/7/storytelling/characters/police commisioner.png</ch3>        <background>stories/7/storytelling/settings/romantic resturant.jpg</background>        <backgroundEffect/>        <item>stories/7/storytelling/items/phone.png</item>        <bgm>stories/7/storytelling/bgm/Persona 3 OST  Iwatodai Dorm.mp3</bgm>        <soundEffect>stories/7/storytelling/sound effects/buttonClick.mp3</soundEffect>        <soundEffectConstant/>        <voice>stories/7/storytelling/voice/[Phone] Ringing.mp3</voice>        <speaker>masoud</speaker>        <dialogue>hello mr</dialogue>    </scene>
+        <scene>
+            <ch1/>
+            <ch2>stories/7/storytelling/characters/Shaun.png</ch2>
+            <ch3/>
+            <background>stories/7/storytelling/settings/In - Adult Apartment.jpg</background>
+            <backgroundEffect/>
+            <item/>
+            <bgm/>
+            <soundEffect/>
+            <soundEffectConstant/>
+            <voice/>
+            <speaker>bakr</speaker>
+            <dialogue>hiiii</dialogue>
+        </scene>
+    </episode>

@@ -8,7 +8,7 @@ class SearchController
 {
     public function search()
     {
-        $categories = Category::get();
+        $categories = Category::where('id', '!=', 1)->get();
 
         $keyword = request('keyword') ?? '';
         $category = request('category_id') ?? 0;

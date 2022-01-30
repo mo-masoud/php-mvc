@@ -16,7 +16,7 @@
             <div class="row">
                 <form method="GET" action="/search" class="col-md-3">
                     <h2><?= $keyword ?></h2>
-                    <p class="text-color5">714K results</p>
+                    <p class="text-color5"><?= count($stories) ?> results</p>
                     <input class="form-control mb-2" type="text" name="keyword" placeholder="Keyword"
                         value="<?= $keyword ?>">
 

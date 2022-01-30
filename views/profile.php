@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="col-md-2 my-auto text-left text-md-right">
                                         <p>
-                                            <a href="/stories/edit/<?= $story->id ?>" class="btn btn-md btn-color1">Edit
+                                            <a href="/engine?story=<?= $story->id ?>" class="btn btn-md btn-color1">Edit
                                                 Episodes</a>
                                         </p>
                                     </div>
@@ -90,108 +90,30 @@
                 <h4 class="text-center">You may also like</h4>
                 <div class="my-3">
 
+                    <?php foreach ($topStories as $topStory): ?>
                     <div class="mb-2 bg-color2 rounded py-2 border-right border-width4 border-dark">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-4 pr-0 pl-1">
                                     <img src="images/cover.jpg" width="100%" height="100%" class="rounded">
                                 </div>
-                                <div class="col-8 my-auto py-2 pr-2">
-                                    <h3 class="display-5">The Detective</h3>
-                                    <div class="badge badge-success">Completed</div>
-                                    <ul class="list-inline my-2">
+                                <a href="/show-story?story_id=<?= $topStory->id ?>"
+                                    class="text-dark col-8 my-auto py-2 pr-2">
+                                    <h3 class="display-5"><?= $topStory->name ?></h3>
+                                    <div class="badge badge-<?= $topStory->state == 1 ? 'warning' : 'success'?>">
+                                        <?= $topStory->state == 1 ? 'On Going' : 'Completed'?></div>
+                                    <!-- <ul class="list-inline my-2">
                                         <li class="list-inline-item"><span class="font-2 text-color5">Episodes
                                             </span><span class="font-1">52</span></li>
-                                    </ul>
+                                    </ul> -->
                                     <p class="description-2">
-                                        With eleven missing women to find and six high-profile burglary cases to solve,
-                                        the last thing Detective Nathan McNamara needs in his life is one more
-                                        complication. And that's exactly what his recent one-night stand is
-                                        becoming-complicated. With his heinous lieutenant breathing down his neck for
-                                        answers and his accidental girlfriend dropping hints for a commitment, Nathan is
-                                        realizing that his career and his bachelor status are both on the line.
-                                        When the burglary cases suddenly escalate to homicide, Nathan must put
-                                        everything else aside to stop the killer. But this is easier said than done when
-                                        the blonde from the bar repeatedly shows up at his doorstep and enlists his own
-                                        mother against him. Now he's more convinced than ever that his job hangs in the
-                                        balance and that the Surgeon General's warning on the whiskey bottle should
-                                        include something about women.
-                                        The Detective is part of THE SOUL SUMMONER Series. Book one of the series is
-                                        available on WATTPAD.
+                                        <?= $topStory->desc ?>
                                     </p>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="mb-2 bg-color2 rounded py-2 border-right border-width4 border-dark">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-4 pr-0 pl-1">
-                                    <img src="images/cover.jpg" width="100%" height="100%" class="rounded">
-                                </div>
-                                <div class="col-8 my-auto py-2 pr-2">
-                                    <h3 class="display-5">The Detective</h3>
-                                    <div class="badge badge-success">Completed</div>
-                                    <ul class="list-inline my-2">
-                                        <li class="list-inline-item"><span class="font-2 text-color5">Episodes
-                                            </span><span class="font-1">52</span></li>
-                                    </ul>
-                                    <p class="description-2">
-                                        With eleven missing women to find and six high-profile burglary cases to solve,
-                                        the last thing Detective Nathan McNamara needs in his life is one more
-                                        complication. And that's exactly what his recent one-night stand is
-                                        becoming-complicated. With his heinous lieutenant breathing down his neck for
-                                        answers and his accidental girlfriend dropping hints for a commitment, Nathan is
-                                        realizing that his career and his bachelor status are both on the line.
-                                        When the burglary cases suddenly escalate to homicide, Nathan must put
-                                        everything else aside to stop the killer. But this is easier said than done when
-                                        the blonde from the bar repeatedly shows up at his doorstep and enlists his own
-                                        mother against him. Now he's more convinced than ever that his job hangs in the
-                                        balance and that the Surgeon General's warning on the whiskey bottle should
-                                        include something about women.
-                                        The Detective is part of THE SOUL SUMMONER Series. Book one of the series is
-                                        available on WATTPAD.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-2 bg-color2 rounded py-2 border-right border-width4 border-dark">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-4 pr-0 pl-1">
-                                    <img src="images/cover.jpg" width="100%" height="100%" class="rounded">
-                                </div>
-                                <div class="col-8 my-auto py-2 pr-2">
-                                    <h3 class="display-5">The Detective</h3>
-                                    <div class="badge badge-success">Completed</div>
-                                    <ul class="list-inline my-2">
-                                        <li class="list-inline-item"><span class="font-2 text-color5">Episodes
-                                            </span><span class="font-1">52</span></li>
-                                    </ul>
-                                    <p class="description-2">
-                                        With eleven missing women to find and six high-profile burglary cases to solve,
-                                        the last thing Detective Nathan McNamara needs in his life is one more
-                                        complication. And that's exactly what his recent one-night stand is
-                                        becoming-complicated. With his heinous lieutenant breathing down his neck for
-                                        answers and his accidental girlfriend dropping hints for a commitment, Nathan is
-                                        realizing that his career and his bachelor status are both on the line.
-                                        When the burglary cases suddenly escalate to homicide, Nathan must put
-                                        everything else aside to stop the killer. But this is easier said than done when
-                                        the blonde from the bar repeatedly shows up at his doorstep and enlists his own
-                                        mother against him. Now he's more convinced than ever that his job hangs in the
-                                        balance and that the Surgeon General's warning on the whiskey bottle should
-                                        include something about women.
-                                        The Detective is part of THE SOUL SUMMONER Series. Book one of the series is
-                                        available on WATTPAD.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php endforeach; ?>
 
                 </div>
             </div>

@@ -19,7 +19,8 @@
 
                 <?php foreach ($categories as $category): ?>
                 <div class="col-md-3">
-                    <a href="/search?category_id=<?= $category->id ?>">
+                    <a
+                        <?= $category->id == 1 ? 'href="/search?content=2"' : 'href="/search?category_id=' . $category->id . '"' ?>>
                         <div class="category-card font-3 animate__animated animate__bounce"
                             style="background-image: url('images/categories/<?= $category->name ?>.png');">
                             <?= $category->name ?>

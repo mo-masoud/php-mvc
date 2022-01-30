@@ -18,11 +18,11 @@ class StoryController
         $v = new Validator();
         $v->setRules([
             'name' => 'required|between:4,32',
-            'desc' => 'required|between:2,128',
+            'desc' => 'required|between:2,1000',
             'tags' => 'between:0,256',
             'category_id' => 'required',
             'state' => 'required|between:1,2',
-            'price' => 'required|max:20',
+            'price' => 'max:20',
         ]);
 
         $v->make(request()->all());
@@ -37,6 +37,7 @@ class StoryController
 
         $data = request()->all();
         $data['user_id'] = auth()->id;
+        $data['price'] = strlen($data['price']) === 0 ? 0.0 : $data['price'];
         $id = Story::create($data);
 
         StoryBuilder::createStory($id);
@@ -54,7 +55,17 @@ class StoryController
         }
         $storyOwner = User::find($story->user_id);
 
-        return view('story', compact('story', 'storyOwner'));
+        $episodes = array_diff(scandir("stories/{$story->id}/storytelling/episodes"), ['.', '..']);
+        $episodeUrl = "review?episode=stories/{$story->id}/storytelling/episodes/";
+        if (isLogin()) {
+            $inBill = Bill::where('story_id', '=', $story->id)->where('user_id', '=', auth()->id)->find();
+        } else {
+            $inBill = null;
+        }
+
+        $topStories = Story::get(orderBy: ['views', 'ASC'], limit: 3);
+
+        return view('story', compact('story', 'storyOwner', 'episodeUrl', 'episodes', 'inBill', 'topStories'));
     }
 
     public function buy()

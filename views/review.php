@@ -939,7 +939,7 @@ void main(void) {
                         </div>
                         <div class="col-10 my-auto pl-4 pt-2">
                             <div style="font-size: 5.5vh; font-family: 'Anton', sans-serif;">
-                                <span class="text-danger text-uppercase">THE FAKEBOOK</span>
+                                <span class="text-danger text-uppercase"><?= $story->name ?></span>
                                 <span id="menuEPNum" class="bg-black px-4"></span>
                             </div>
 

@@ -1,6 +1,8 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\User;
+use App\Models\Story;
 use MasoudMVC\Support\StoryBuilder;
 
 class EngineController
@@ -8,6 +10,19 @@ class EngineController
     public function engine()
     {
         return view('storytelling', includeMain: false);
+    }
+
+    public function review()
+    {
+        $id = request('story_id');
+        $story = Story::find($id);
+        if (!$story) {
+            return view('errors.404');
+        }
+
+        $storyOwner = User::find($story->user_id);
+
+        return view('review', params: compact('story', 'storyOwner'), includeMain: false);
     }
 
     public function getEpisodes()

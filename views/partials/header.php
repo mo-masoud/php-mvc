@@ -1,8 +1,9 @@
 <?php if (isLogin()): ?>
 
 <header class="bg-color1">
-    <nav class="navbar navbar-expand-lg navbar-dark container">
-        <a class="navbar-brand" href="#">
+    <nav
+        class="navbar navbar-expand-lg navbar-dark <?= in_array(str_replace('/', '', request()->path()), ['search']) ? 'container-fluid' : 'container' ?>">
+        <a class="navbar-brand" href="/">
             <img src="images/logo.png" width="130" height="30" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -57,8 +58,9 @@
 <?php else: ?>
 
 <header class="bg-color1">
-    <nav class="navbar navbar-expand-lg navbar-dark container">
-        <a class="navbar-brand" href="index.html">
+    <nav
+        class="navbar navbar-expand-lg navbar-dark <?= in_array(str_replace('/', '', request()->path()), ['search']) ? 'container-fluid' : 'container' ?>">
+        <a class="navbar-brand" href="/">
             <img src="images/logo.png" width="130" height="30" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

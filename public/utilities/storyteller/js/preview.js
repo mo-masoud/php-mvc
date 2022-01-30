@@ -281,6 +281,7 @@ function assignCurrentScene(){
         var fileNameIndex = episodeXMLPath.lastIndexOf("/") + 1;
         var filename = episodeXMLPath.substr(fileNameIndex);
         filename = filename.replace(".xml","");
+
         var num = filename.substr(0, filename.indexOf('_'));
         var title = filename.substr(filename.indexOf('_')+1, filename.length-1);
     
