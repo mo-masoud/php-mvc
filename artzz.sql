@@ -31,7 +31,7 @@ CREATE TABLE `bills` (
   KEY `user_idx` (`user_id`),
   CONSTRAINT `story` FOREIGN KEY (`story_id`) REFERENCES `stories` (`id`),
   CONSTRAINT `user_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `bills` (
 
 LOCK TABLES `bills` WRITE;
 /*!40000 ALTER TABLE `bills` DISABLE KEYS */;
+INSERT INTO `bills` VALUES (1,12,11),(2,10,11);
 /*!40000 ALTER TABLE `bills` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,9 +80,9 @@ CREATE TABLE `stories` (
   `user_id` int NOT NULL,
   `category_id` int NOT NULL,
   `name` varchar(100) NOT NULL,
-  `desc` varchar(300) NOT NULL,
+  `desc` varchar(1000) NOT NULL,
   `tags` varchar(1000) DEFAULT NULL,
-  `price` float(8,2) NOT NULL,
+  `price` float(8,2) DEFAULT '0.00',
   `state` tinyint(1) NOT NULL,
   `views` int unsigned DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -89,7 +90,7 @@ CREATE TABLE `stories` (
   KEY `category_idx` (`category_id`),
   CONSTRAINT `category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`),
   CONSTRAINT `user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +99,7 @@ CREATE TABLE `stories` (
 
 LOCK TABLES `stories` WRITE;
 /*!40000 ALTER TABLE `stories` DISABLE KEYS */;
-INSERT INTO `stories` VALUES (4,8,3,'test','test','test',10.00,2,0),(5,8,2,'test 22','test 22','asd',1.00,2,0);
+INSERT INTO `stories` VALUES (10,10,2,'test 1','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','action, comedy',10.00,1,0),(11,10,6,'test 2','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','actions',0.00,2,0),(12,10,5,'test 3','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','',10.00,2,0);
 /*!40000 ALTER TABLE `stories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -118,7 +119,7 @@ CREATE TABLE `users` (
   `join_date` timestamp NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,7 +128,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (8,'momasoud','Mohamed Masoud','$2y$10$Xz4TbLXOYEmLOqp19fdBoO2pFiSpkriPfz4/hEBxwmjpsoZVjfHlu','Egypt','2022-01-28 14:40:14');
+INSERT INTO `users` VALUES (10,'momasoud','Mohamed Masoud','$2y$10$U6.F3zw5mtvRyBA0ykAE0.aSdqqqKPC9ACiDuAt4qEKhTqdWqSWiu','Egypt','2022-01-30 19:33:04'),(11,'bakr012','Mohamed Bakr','$2y$10$MiHTmtUwsHzS1oYzRJYBG..cmTNoCMfVKbQLelPTxJ6ZxHWgnP62S','Egypt','2022-01-30 19:48:24');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -140,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-29  0:13:56
+-- Dump completed on 2022-01-30 21:59:17
